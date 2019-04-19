@@ -1,6 +1,6 @@
-# Function
+# function
 
-Deploy functions to different FaaS providers with this simple Function abstraction made as a [Serverless Component](https://github.com/serverless/components).
+Deploy functions to different FaaS providers with this simple function abstraction made as a [Serverless Component](https://github.com/serverless/components).
 
 &nbsp;
 
