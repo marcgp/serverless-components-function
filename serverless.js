@@ -3,10 +3,7 @@ const shortid = require('shortid')
 const aws = require('aws-sdk')
 const { Component } = require('@serverless/components')
 const { mergeDeepRight } = require('ramda')
-const {
-  deployAwsLambda,
-  removeAwsLambda,
-} = require('./lib')
+const { deployAwsLambda, removeAwsLambda } = require('./lib')
 
 /**
  * Function Component
@@ -14,7 +11,6 @@ const {
  */
 
 class Function extends Component {
-
   /**
    * Default
    * @param  {Object}  [inputs={}]
@@ -22,7 +18,6 @@ class Function extends Component {
    */
 
   async default(inputs = {}) {
-
     this.cli.status('Running')
 
     // Defaults
@@ -69,7 +64,6 @@ class Function extends Component {
    */
 
   async remove(inputs = {}) {
-
     // Status
     this.cli.status('Removing')
 

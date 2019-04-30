@@ -1,22 +1,28 @@
 {
-  "name": "Function",
-  "version": "1.0.0",
-  "description": "",
-  "main": "serverless.js",
+  "name": "@serverless/function",
+  "version": "0.1.0",
+  "description": "Deploy a function to multiple FaaS providers w/ this simple Function abstraction built as a Serverless Component",
+  "main": "./serverless.js",
   "scripts": {
     "test": "jest"
   },
-  "author": "",
-  "license": "ISC",
+  "author": "Serverless, Inc.",
+  "license": "Apache",
   "dependencies": {
-    "@serverless/aws-iam-role": "latest",
-    "@serverless/aws-api-gateway": "latest",
-    "@serverless/aws-lambda": "latest",
-    "@serverless/components": "latest",
+    "@serverless/aws-api-gateway": "^0.1.0",
+    "@serverless/aws-iam-role": "^0.1.0",
+    "@serverless/aws-lambda": "^0.1.0",
+    "@serverless/components": "^0.1.0",
+    "aws-sdk": "^2.442.0",
     "ramda": "^0.26.1",
     "shortid": "^2.2.14"
   },
   "devDependencies": {
-    "jest": "^24.3.1"
+    "babel-eslint": "9.0.0",
+    "eslint": "5.6.0",
+    "eslint-config-prettier": "^3.6.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-prettier": "^3.0.1",
+    "prettier": "^1.15.3"
   }
 }
