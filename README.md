@@ -80,7 +80,7 @@ function (master)$ components
 
   myFunction › outputs:
   name:  'serverless-function'
-  description:  'AWS Lambda Component'
+  description:  'My Serverless Function'
   memory:  512
   timeout:  10
   code:  './code'
