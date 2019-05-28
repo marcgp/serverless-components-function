@@ -9,13 +9,8 @@
   "author": "Serverless, Inc.",
   "license": "Apache",
   "dependencies": {
-    "@serverless/aws-api-gateway": "^0.1.0",
-    "@serverless/aws-iam-role": "^0.1.0",
     "@serverless/aws-lambda": "^0.1.0",
-    "@serverless/components": "^0.1.0",
-    "aws-sdk": "^2.442.0",
-    "ramda": "^0.26.1",
-    "shortid": "^2.2.14"
+    "@serverless/components": "^0.1.0"
   },
   "devDependencies": {
     "babel-eslint": "9.0.0",
