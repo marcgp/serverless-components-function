@@ -1,6 +1,6 @@
 {
   "name": "@serverless/function",
-  "version": "0.2.0",
+  "version": "0.2.2",
   "description": "Deploy a function to multiple FaaS providers w/ this simple Function abstraction built as a Serverless Component",
   "main": "./serverless.js",
   "publishConfig": {
@@ -12,8 +12,8 @@
   "author": "Serverless, Inc.",
   "license": "MIT",
   "dependencies": {
-    "@serverless/aws-lambda": "^0.2.0",
-    "@serverless/components": "^0.2.0"
+    "@serverless/aws-lambda": "^0.3.0",
+    "@serverless/core": "^0.1.0"
   },
   "devDependencies": {
     "babel-eslint": "9.0.0",
