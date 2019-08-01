@@ -15,8 +15,15 @@ class Function extends Component {
   async default(inputs = {}) {
     this.context.status('Deploying')
 
+    const bucket = await this.load('@serverless/aws-s3')
     const lambda = await this.load('@serverless/aws-lambda')
 
+    this.context.status('Deploying AWS S3 Bucket')
+    const bucketOutputs = await bucket({
+      region: inputs.region
+    })
+
+    inputs.bucket = bucketOutputs.name
     const lambdaOutputs = await lambda(inputs)
 
     return lambdaOutputs
@@ -31,8 +38,10 @@ class Function extends Component {
   async remove(inputs = {}) {
     this.context.status('Removing')
 
+    const bucket = await this.load('@serverless/aws-s3')
     const lambda = await this.load('@serverless/aws-lambda')
 
+    await bucket.remove()
     const lambdaOutputs = await lambda.remove(inputs)
 
     return lambdaOutputs
