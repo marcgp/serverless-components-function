@@ -1,6 +1,6 @@
 {
   "name": "@serverless/function",
-  "version": "1.0.0",
+  "version": "2.0.0",
   "description": "Deploy a function to multiple FaaS providers w/ this simple Function abstraction built as a Serverless Component",
   "main": "./serverless.js",
   "publishConfig": {
