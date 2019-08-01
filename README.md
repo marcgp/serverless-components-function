@@ -15,7 +15,7 @@ Deploy functions to different FaaS providers with this simple function abstracti
 ### 1. Install
 
 ```shell
-$ npm install -g @serverless/components
+$ npm install -g serverless
 ```
 
 ### 2. Create
@@ -33,8 +33,7 @@ the directory should look something like this:
   |- handler.js
   |- package.json # optional
 |- serverless.yml
-|- .env      # your development AWS api keys
-|- .env.prod # your production AWS api keys
+|- .env           # your AWS api keys
 ```
 
 ```js
@@ -76,27 +75,7 @@ myFunction:
 ### 4. Deploy
 
 ```shell
-function (master)$ components
-
-  myFunction › outputs:
-  name:  'serverless-function'
-  description:  'My Serverless Function'
-  memory:  512
-  timeout:  10
-  code:  './code'
-  bucket:  undefined
-  shims:  []
-  handler:  'index.hello'
-  runtime:  'nodejs8.10'
-  env: 
-  role: 
-    arn:  'arn:aws:iam::552750238299:role/serverless-function'
-  arn:  'arn:aws:lambda:us-east-1:552750238299:function:serverless-function'
-
-
-  21s › dev › serverless-function › done
-
-function (master)$
+$ serverless
 ```
 
 &nbsp;
